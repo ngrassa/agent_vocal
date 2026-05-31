@@ -1,0 +1,95 @@
+{
+  "restaurant": {
+    "nom": "مطعم البركة",
+    "nom_latin": "Restaurant Al Baraka",
+    "adresse": "شارع الحبيب بورقيبة، تونس العاصمة",
+    "telephone": "71 000 000",
+    "horaires": "12h00 - 22h00"
+  },
+  "menu": {
+    "couscous_djeij": {
+      "nom": "كسكسي بالدجاج",
+      "nom_latin": "Couscous Poulet",
+      "prix": 15,
+      "description": "كسكسي تونسي تقليدي بالدجاج والخضر"
+    },
+    "couscous_ghanm": {
+      "nom": "كسكسي بالغنم",
+      "nom_latin": "Couscous Agneau",
+      "prix": 18,
+      "description": "كسكسي تقليدي باللحم والخضر"
+    },
+    "brick_tuna": {
+      "nom": "بريك بالتونة",
+      "nom_latin": "Brik au Thon",
+      "prix": 4,
+      "description": "بريك مقرمش بالتونة والبيض"
+    },
+    "brick_oeuf": {
+      "nom": "بريك بالبيض",
+      "nom_latin": "Brik à l'Oeuf",
+      "prix": 3,
+      "description": "بريك مقرمش بالبيض والبقدونس"
+    },
+    "lablebi": {
+      "nom": "لبلابي",
+      "nom_latin": "Lablebi",
+      "prix": 3,
+      "description": "حمص بالهريسة والزيت والليمون"
+    },
+    "chawarma": {
+      "nom": "شاورما",
+      "nom_latin": "Chawarma",
+      "prix": 9,
+      "description": "شاورما دجاج أو لحم بالصلصة"
+    },
+    "kefta": {
+      "nom": "كفتة مشوية",
+      "nom_latin": "Kefta Grillée",
+      "prix": 10,
+      "description": "كفتة مشوية بالبهار التونسي"
+    },
+    "merguez": {
+      "nom": "مرقاز مشوي",
+      "nom_latin": "Merguez Grillées",
+      "prix": 9,
+      "description": "مرقاز حار مشوي بالفريت"
+    },
+    "salata_tunisiya": {
+      "nom": "سلطة تونسية",
+      "nom_latin": "Salade Tunisienne",
+      "prix": 4,
+      "description": "طماطم وخيار وفلفل وزيتون وتونة"
+    },
+    "frit": {
+      "nom": "فريت",
+      "nom_latin": "Frites",
+      "prix": 3,
+      "description": "فريت منزلي"
+    },
+    "coca_cola": {
+      "nom": "كوكا كولا",
+      "nom_latin": "Coca Cola 33cl",
+      "prix": 2,
+      "description": "علبة 33cl"
+    },
+    "water": {
+      "nom": "ماء معدني",
+      "nom_latin": "Eau Minérale 50cl",
+      "prix": 1,
+      "description": "سافية أو عين"
+    },
+    "jus_orange": {
+      "nom": "عصير برتقال",
+      "nom_latin": "Jus d'Orange",
+      "prix": 3,
+      "description": "عصير طازج"
+    },
+    "kahwa": {
+      "nom": "قهوة",
+      "nom_latin": "Café",
+      "prix": 2,
+      "description": "قهوة عربي"
+    }
+  }
+}

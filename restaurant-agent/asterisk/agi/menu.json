@@ -1,0 +1,95 @@
+{
+  "restaurant": {
+    "nom": "Restaurant Al Baraka",
+    "adresse": "Rue Habib Bourguiba, Kairouan",
+    "telephone": "73 000 000",
+    "horaires": "12h00 - 22h00"
+  },
+  "menu": {
+    "pizza_margherita": {
+      "nom": "Pizza Margherita",
+      "prix": 12,
+      "description": "Tomate, mozzarella, basilic"
+    },
+    "pizza_thon": {
+      "nom": "Pizza Thon",
+      "prix": 14,
+      "description": "Tomate, thon, olives, mozzarella"
+    },
+    "pizza_4_fromages": {
+      "nom": "Pizza 4 Fromages",
+      "prix": 15,
+      "description": "Mozzarella, emmental, chèvre, parmesan"
+    },
+    "pizza_orientale": {
+      "nom": "Pizza Orientale",
+      "prix": 16,
+      "description": "Merguez, harissa, oignons, fromage"
+    },
+    "burger_classic": {
+      "nom": "Burger Classic",
+      "prix": 11,
+      "description": "Steak haché, salade, tomate, sauce maison"
+    },
+    "burger_double": {
+      "nom": "Burger Double",
+      "prix": 15,
+      "description": "Double steak, fromage fondu, bacon"
+    },
+    "sandwich_poulet": {
+      "nom": "Sandwich Poulet Grillé",
+      "prix": 8,
+      "description": "Poulet grillé, salade, tomate, sauce"
+    },
+    "sandwich_merguez": {
+      "nom": "Sandwich Merguez",
+      "prix": 7,
+      "description": "Merguez, harissa, frites"
+    },
+    "couscous_agneau": {
+      "nom": "Couscous Agneau",
+      "prix": 18,
+      "description": "Couscous traditionnel, légumes, agneau"
+    },
+    "couscous_poulet": {
+      "nom": "Couscous Poulet",
+      "prix": 15,
+      "description": "Couscous traditionnel, légumes, poulet"
+    },
+    "salade_tunisienne": {
+      "nom": "Salade Tunisienne",
+      "prix": 5,
+      "description": "Tomate, concombre, poivron, olives, thon"
+    },
+    "frites": {
+      "nom": "Frites",
+      "prix": 3,
+      "description": "Frites maison"
+    },
+    "coca_cola_33cl": {
+      "nom": "Coca Cola 33cl",
+      "prix": 2,
+      "description": "Canette"
+    },
+    "coca_cola_1l": {
+      "nom": "Coca Cola 1L",
+      "prix": 4,
+      "description": "Bouteille familiale"
+    },
+    "eau_minerale": {
+      "nom": "Eau Minérale 50cl",
+      "prix": 1,
+      "description": "Safia ou Ain"
+    },
+    "jus_orange": {
+      "nom": "Jus d'Orange Frais",
+      "prix": 3,
+      "description": "Pressé minute"
+    },
+    "cafe": {
+      "nom": "Café",
+      "prix": 2,
+      "description": "Café express"
+    }
+  }
+}

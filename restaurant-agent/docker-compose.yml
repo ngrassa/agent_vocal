@@ -1,0 +1,58 @@
+version: "3.8"
+
+services:
+  # ── Agent FastAPI (dashboard + API + persistance) ──────────────────
+  agent:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: restaurant-agent
+    restart: unless-stopped
+    ports:
+      - "8000:8000"
+    volumes:
+      - ./data:/app/data
+      - ./menu.json:/app/menu.json:ro
+    env_file:
+      - .env
+    networks:
+      - restaurant-net
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+      start_period: 15s
+
+  # ── Asterisk PBX (réception appels + AGI) ─────────────────────────
+  asterisk:
+    build:
+      context: ./asterisk
+      dockerfile: Dockerfile
+    container_name: restaurant-asterisk
+    restart: unless-stopped
+    network_mode: host          # Obligatoire pour SIP/RTP (NAT traversal)
+    volumes:
+      - ./data:/app/data        # SQLite partagé (lecture seule pour asterisk)
+      - ./menu.json:/var/lib/asterisk/agi-bin/menu.json:ro
+      - asterisk-whisper:/root/.cache/huggingface  # Cache modèle Whisper
+    env_file:
+      - .env
+    environment:
+      AGENT_API_URL: "http://127.0.0.1:8000"   # host mode → localhost
+    depends_on:
+      agent:
+        condition: service_healthy
+    logging:
+      driver: "json-file"
+      options:
+        max-size: "10m"
+        max-file: "3"
+
+volumes:
+  asterisk-whisper:
+    driver: local
+
+networks:
+  restaurant-net:
+    driver: bridge
